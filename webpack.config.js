@@ -1,7 +1,7 @@
 const path = require('path');
 module.exports = {
   entry: [
-    './ducks/index.ts',
+    './src/index.ts',
   ],
   devtool: "inline-source-map",
   module: {
