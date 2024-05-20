@@ -1,8 +1,8 @@
 const path = require('path');
 module.exports = {
-  entry: {
-    './folder': './folder/src/index.ts',
-  },
+  entry: [
+    './ducks/index.ts',
+  ],
   devtool: "inline-source-map",
   module: {
     rules: [
