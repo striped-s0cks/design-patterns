@@ -34,3 +34,10 @@ export function appendBreak(): void {
     const br = document.createElement('br');
     getRoot().append(br);
 }
+
+/**
+ * Rounds a number to one decimal.
+ */
+export function roundToOneDecimal(num: number): number {
+    return Math.round(num * 10) / 10;
+}
