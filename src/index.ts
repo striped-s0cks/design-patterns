@@ -1,6 +1,6 @@
-import MallardDuck from "./simUDuck/ducks/mallardDuck";
-import ModelDuck from "./simUDuck/ducks/modelDuck";
-import FlyRocketPowered from "./simUDuck/flyBehaviors/flyRocketPowered";
+import MallardDuck from "./strategyPattern/ducks/mallardDuck";
+import ModelDuck from "./strategyPattern/ducks/modelDuck";
+import FlyRocketPowered from "./strategyPattern/flyBehaviors/flyRocketPowered";
 import { appendBreak, appendDivider, appendHeader, appendLog } from "./utils";
 
 appendHeader('Duck Simulator');
