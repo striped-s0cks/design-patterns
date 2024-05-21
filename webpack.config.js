@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: [
-    './src/index.ts',
+    './src/strategyPattern/index.ts',
   ],
   devtool: "inline-source-map",
   module: {
