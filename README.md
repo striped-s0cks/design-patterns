@@ -1,5 +1,5 @@
 # design-patterns
-Examples from _Head First Design Patterns_ in TypeScript
+Examples from _Head First Design Patterns_ in TypeScript.
 
 ### To run
 - `npm install`
