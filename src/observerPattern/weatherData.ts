@@ -14,10 +14,12 @@ export default class WeatherData implements Subject {
 
     registerObserver(observer: Observer): void {
         this.observers.add(observer);
+        appendLog('Observer has been added');
     }
 
     removeObserver(observer: Observer): void {
         this.observers.delete(observer);
+        appendLog('Observer has been removed');
     }
 
     notifyObservers(): void {

@@ -17,6 +17,7 @@ appendBreak();
 weatherData.setMeasurements(83.812, 70, 29.2);
 appendBreak();
 
+weatherData.removeObserver(currentConditions);
 weatherData.setMeasurements(78, 90.3, 29.2);
 
 appendDivider();
