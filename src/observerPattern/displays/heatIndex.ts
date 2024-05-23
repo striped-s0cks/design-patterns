@@ -1,4 +1,4 @@
-import { appendLog, roundToOneDecimal } from "../../utils";
+import { appendLog, roundToDecimal } from "../../utils";
 import Observer from "../observer";
 import WeatherData from "../weatherData";
 import Display from "./display";
@@ -21,7 +21,7 @@ export default class HeatIndex implements Observer, Display {
     }
 
     display(): void {
-        const heatIndex = roundToOneDecimal(this.getHeatIndex());
+        const heatIndex = roundToDecimal(this.getHeatIndex(), 1);
         appendLog(`Heat index: ${heatIndex}`);
     }
 

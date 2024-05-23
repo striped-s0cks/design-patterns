@@ -1,4 +1,4 @@
-import { appendLog, roundToOneDecimal } from "../../utils";
+import { appendLog, roundToDecimal } from "../../utils";
 import Observer from "../observer";
 import WeatherData from "../weatherData";
 import Display from "./display";
@@ -28,7 +28,7 @@ export default class Statistics implements Observer, Display {
             return 0;
         }
 
-        return roundToOneDecimal(Math.min(...this.temps));
+        return roundToDecimal(Math.min(...this.temps), 1);
     }
 
     private getMaxTemp(): number {
@@ -36,7 +36,7 @@ export default class Statistics implements Observer, Display {
             return 0;
         }
 
-        return roundToOneDecimal(Math.max(...this.temps));
+        return roundToDecimal(Math.max(...this.temps), 1);
     }
 
     private getAvgTemp(): number {
@@ -49,6 +49,6 @@ export default class Statistics implements Observer, Display {
             sum += temp;
         }
 
-        return roundToOneDecimal(sum / this.temps.length)
+        return roundToDecimal(sum / this.temps.length, 1)
     }
 }
