@@ -4,6 +4,7 @@ module.exports = {
   entry: [
     './src/strategyPattern/index.ts',
     './src/observerPattern/index.ts',
+    './src/decoratorPattern/index.ts',
   ],
   devtool: "inline-source-map",
   module: {
