@@ -36,8 +36,8 @@ export function appendBreak(): void {
 }
 
 /**
- * Rounds a number to one decimal.
+ * Rounds a number to specified decimal.
  */
-export function roundToOneDecimal(num: number): number {
-    return Math.round(num * 10) / 10;
+export function roundToDecimal(num: number, decimal: number): number {
+    return Math.round(num * Math.pow(10, decimal)) / Math.pow(10, decimal);
 }
