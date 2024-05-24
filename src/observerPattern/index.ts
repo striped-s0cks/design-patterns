@@ -1,10 +1,11 @@
-import { appendBreak, appendDivider, appendHeader } from "../utils";
+import { HeaderType, appendBreak, appendDivider, appendHeader } from "../utils";
 import CurrentConditions from "./displays/currentConditions";
 import HeatIndex from "./displays/heatIndex";
 import Statistics from "./displays/statistics";
 import WeatherData from "./weatherData";
 
-appendHeader('Weather Station');
+appendHeader('Observer Pattern', HeaderType.h1);
+appendHeader('Weather Station', HeaderType.h2);
 
 const weatherData = new WeatherData();
 const currentConditions = new CurrentConditions(weatherData);

@@ -1,4 +1,4 @@
-import { appendDivider, appendHeader, appendLog } from "../utils";
+import { HeaderType, appendDivider, appendHeader, appendLog } from "../utils";
 import DarkRoast from "./beverages/darkRoast";
 import Decaf from "./beverages/decaf";
 import Espresso from "./beverages/espresso";
@@ -8,7 +8,8 @@ import Soy from "./condiments/soy";
 import SteamedMilk from "./condiments/steamedMilk";
 import Whip from "./condiments/whip";
 
-appendHeader('Starbuzz Coffee');
+appendHeader('Decorator Pattern', HeaderType.h1);
+appendHeader('Starbuzz Coffee', HeaderType.h2);
 
 const order1 = new Espresso();
 appendLog(`${order1.getDescription()}, $${order1.cost()}`);

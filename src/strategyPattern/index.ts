@@ -1,9 +1,10 @@
 import MallardDuck from "./ducks/mallardDuck";
 import ModelDuck from "./ducks/modelDuck";
 import FlyRocketPowered from "./flyBehaviors/flyRocketPowered";
-import { appendBreak, appendDivider, appendHeader, appendLog } from "../utils";
+import { HeaderType, appendBreak, appendDivider, appendHeader, appendLog } from "../utils";
 
-appendHeader('Duck Simulator');
+appendHeader('Strategy Pattern', HeaderType.h1);
+appendHeader('Duck Simulator', HeaderType.h2);
 
 const mallard = new MallardDuck();
 mallard.display();

@@ -5,11 +5,20 @@ export function getRoot(): HTMLElement {
     return document.getElementById('root');
 }
 
+export enum HeaderType {
+    h1 = 'h1',
+    h2 = 'h2',
+    h3 = 'h3',
+    h4 = 'h4',
+    h5 = 'h5',
+    h6 = 'h6',
+}
+
 /**
  * Adds an h1 element with the provided text to the root element.
  */
-export function appendHeader(text: string): void {
-    const header = document.createElement('h1');
+export function appendHeader(text: string, headerType: HeaderType): void {
+    const header = document.createElement(headerType);
     header.append(text);
     getRoot().append(header);
 }
