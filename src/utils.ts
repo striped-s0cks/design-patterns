@@ -15,7 +15,7 @@ export enum HeaderType {
 }
 
 /**
- * Adds an h1 element with the provided text to the root element.
+ * Adds a header element with the provided text to the root element.
  */
 export function appendHeader(text: string, headerType: HeaderType): void {
     const header = document.createElement(headerType);
