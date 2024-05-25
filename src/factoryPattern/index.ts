@@ -12,7 +12,7 @@ appendLog(`Ethan ordered a ${nyPizza.getName()}`);
 appendBreak();
 
 const chicagoStore = new ChicagoPizzaStore();
-const chicagoPizza = chicagoStore.orderPizza('cheese');
+const chicagoPizza = chicagoStore.orderPizza('clam');
 appendLog(`Joel ordered a ${chicagoPizza.getName()}`);
 
 appendDivider();
