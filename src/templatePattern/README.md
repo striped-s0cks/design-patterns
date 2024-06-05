@@ -18,5 +18,5 @@ classDiagram
 
     AbstractClass <|-- ConcreteClass
 
-    note for AbstractClass "templateMethod() {\n&nbsp&nbsp&nbsp&nbspoperation1()\n&nbsp&nbsp&nbsp&nbspabstractOperation1()\n&nbsp&nbsp&nbsp&nbspabstractOperation2()\n&nbsp&nbsp&nbsp&nbspoperation2()\n}"
+    note for AbstractClass right "templateMethod() {\n&nbsp&nbsp&nbsp&nbspoperation1()\n&nbsp&nbsp&nbsp&nbspabstractOperation1()\n&nbsp&nbsp&nbsp&nbspabstractOperation2()\n&nbsp&nbsp&nbsp&nbspoperation2()\n}"
 ```
