@@ -7,3 +7,4 @@
 * Classes should be open for extension, but closed for modification.
 * Depend upon abstractions. Do not depend upon concrete classes.
 * Talk only to your immediate friends.
+* Don't call us, we'll call you (a low-level component never calls a high-level component directly).
