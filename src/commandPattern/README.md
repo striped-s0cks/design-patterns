@@ -3,6 +3,7 @@ requests, queue or log requests, and support undoable operations.
 
 ```mermaid
 classDiagram
+    direction LR
     class Client
 
     class Invoker {

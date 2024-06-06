@@ -3,6 +3,7 @@ its dependents are notified and updated automatically.
 
 ```mermaid
 classDiagram
+    direction RL
     class Subject {
         <<interface>>
         registerObserver()
