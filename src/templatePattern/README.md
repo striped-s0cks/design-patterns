@@ -3,20 +3,27 @@ Template Method lets subclasses redefine certain steps of an algorithm without c
 
 ```mermaid
 classDiagram
-    class AbstractClass {
-        templateMethod()
-        operation1()
-        abstractOperation1()
-        abstractOperation2()
-        operation2()
+    class CaffeineBeverage {
+        <<abstract>>
+        final prepareRecipe()
+        boilWater()
+        brew()
+        pourInCup()
+        addCondiments()
+        customerWantsCondiments()
     }
 
-    class ConcreteClass {
-        abstractOperation1()
-        abstractOperation2()
+    class Coffee {
+        brew()
+        addCondiments()
+        customerWantsCondiments()
     }
 
-    AbstractClass <|-- ConcreteClass
+    class Tea {
+        brew()
+        addCondiments()
+    }
 
-    note for AbstractClass right "templateMethod() {\n&nbsp&nbsp&nbsp&nbspoperation1()\n&nbsp&nbsp&nbsp&nbspabstractOperation1()\n&nbsp&nbsp&nbsp&nbspabstractOperation2()\n&nbsp&nbsp&nbsp&nbspoperation2()\n}"
+    CaffeineBeverage <|-- Coffee
+    CaffeineBeverage <|-- Tea
 ```
