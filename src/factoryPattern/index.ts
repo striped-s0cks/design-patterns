@@ -1,4 +1,4 @@
-import { HeaderType, appendBreak, appendDivider, appendHeader, appendLog } from "../utils";
+import { HeaderType, appendBreak, appendHeader, appendLog } from "../utils";
 import ChicagoPizzaStore from "./stores/chicagoPizzaStore";
 import NYPizzaStore from "./stores/nyPizzaStore";
 
@@ -14,5 +14,3 @@ appendBreak();
 const chicagoStore = new ChicagoPizzaStore();
 const chicagoPizza = chicagoStore.orderPizza('clam');
 appendLog(`Joel ordered a ${chicagoPizza.getName()}`);
-
-appendDivider();

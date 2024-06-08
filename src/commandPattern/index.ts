@@ -1,4 +1,4 @@
-import { HeaderType, appendBreak, appendDivider, appendHeader, appendLog } from "../utils";
+import { HeaderType, appendBreak, appendHeader, appendLog } from "../utils";
 import Command from "./commands/command";
 import GarageDoorCloseCommand from "./commands/garageDoorCloseCommand";
 import GarageDoorOpenCommand from "./commands/garageDoorOpenCommand";
@@ -72,5 +72,3 @@ appendLog('Macro commands');
 remote.handleOnClick(3);
 remote.handleOffClick(3);
 remote.handleUndoClick();
-
-appendDivider();

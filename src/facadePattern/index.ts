@@ -1,4 +1,4 @@
-import { HeaderType, appendBreak, appendDivider, appendHeader, appendLog } from "../utils";
+import { HeaderType, appendBreak, appendHeader, appendLog } from "../utils";
 import Amplifier from "./devices/amplifier";
 import PopcornPopper from "./devices/popcornPopper";
 import Projector from "./devices/projector";
@@ -23,5 +23,3 @@ homeTheater.watchMovie('Mulan');
 appendBreak();
 
 homeTheater.endMovie();
-
-appendDivider();

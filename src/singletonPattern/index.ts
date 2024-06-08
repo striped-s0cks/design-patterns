@@ -1,4 +1,4 @@
-import { HeaderType, appendDivider, appendHeader } from "../utils";
+import { HeaderType, appendHeader } from "../utils";
 import Singleton from "./singleton";
 
 appendHeader('Singleton Pattern', HeaderType.h1);
@@ -18,5 +18,3 @@ singleton1.decreaseCount(); // 2
 singleton3.increaseCount(); // 3
 singleton3.increaseCount(); // 4
 singleton2.increaseCount(); // 5
-
-appendDivider();

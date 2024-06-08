@@ -1,4 +1,4 @@
-import { HeaderType, appendBreak, appendDivider, appendHeader } from "../utils";
+import { HeaderType, appendBreak, appendHeader } from "../utils";
 import CurrentConditions from "./displays/currentConditions";
 import HeatIndex from "./displays/heatIndex";
 import Statistics from "./displays/statistics";
@@ -20,5 +20,3 @@ appendBreak();
 
 weatherData.removeObserver(currentConditions);
 weatherData.setMeasurements(78, 90.3, 29.2);
-
-appendDivider();

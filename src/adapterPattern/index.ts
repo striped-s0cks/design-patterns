@@ -1,4 +1,4 @@
-import { HeaderType, appendBreak, appendDivider, appendHeader, appendLog } from "../utils";
+import { HeaderType, appendBreak, appendHeader, appendLog } from "../utils";
 import DuckAdapter from "./adapters/duckAdapter";
 import TurkeyAdapter from "./adapters/turkeyAdapter";
 import MallardDuck from "./birds/mallardDuck";
@@ -33,5 +33,3 @@ appendBreak();
 appendLog('DuckAdapter says:');
 duckAdapter.gobble();
 duckAdapter.fly();
-
-appendDivider();

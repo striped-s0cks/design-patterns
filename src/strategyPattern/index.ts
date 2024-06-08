@@ -1,7 +1,7 @@
 import MallardDuck from "./ducks/mallardDuck";
 import ModelDuck from "./ducks/modelDuck";
 import FlyRocketPowered from "./flyBehaviors/flyRocketPowered";
-import { HeaderType, appendBreak, appendDivider, appendHeader, appendLog } from "../utils";
+import { HeaderType, appendBreak, appendHeader, appendLog } from "../utils";
 
 appendHeader('Strategy Pattern', HeaderType.h1);
 appendHeader('Duck Simulator', HeaderType.h2);
@@ -18,5 +18,3 @@ model.display();
 model.performFly();
 model.setFlyBehavior(new FlyRocketPowered());
 model.performFly();
-
-appendDivider();

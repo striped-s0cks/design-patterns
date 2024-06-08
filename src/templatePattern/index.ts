@@ -1,4 +1,4 @@
-import { HeaderType, appendBreak, appendDivider, appendHeader } from "../utils";
+import { HeaderType, appendBreak, appendHeader } from "../utils";
 import Coffee from "./beverages/coffee";
 import Tea from "./beverages/tea";
 
@@ -12,5 +12,3 @@ appendBreak();
 
 const coffee = new Coffee();
 coffee.prepareRecipe();
-
-appendDivider();

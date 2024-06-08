@@ -1,4 +1,4 @@
-import { HeaderType, appendDivider, appendHeader, appendLog } from "../utils";
+import { HeaderType, appendHeader, appendLog } from "../utils";
 import DarkRoast from "./beverages/darkRoast";
 import Decaf from "./beverages/decaf";
 import Espresso from "./beverages/espresso";
@@ -29,5 +29,3 @@ appendLog(`${order3.getDescription()}, $${order3.cost()}`);
 let order4 = new Decaf();
 order4 = new SteamedMilk(order4);
 appendLog(`${order4.getDescription()}, $${order4.cost()}`);
-
-appendDivider();
