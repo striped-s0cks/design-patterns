@@ -43,3 +43,10 @@ export function appendBreak(): void {
 export function roundToDecimal(num: number, decimal: number): number {
     return Math.round(num * Math.pow(10, decimal)) / Math.pow(10, decimal);
 }
+
+/**
+ * Returns a random number between zero and provided number (excluded) - [0, number).
+ */
+export function getRandom(limit: number): number {
+    return Math.floor(Math.random() * limit);
+}

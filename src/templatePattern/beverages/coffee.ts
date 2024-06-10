@@ -1,4 +1,4 @@
-import { appendLog } from "../../utils";
+import { appendLog, getRandom } from "../../utils";
 import CaffeineBeverage from "./caffeineBeverage";
 
 export default class Coffee extends CaffeineBeverage {
@@ -16,7 +16,7 @@ export default class Coffee extends CaffeineBeverage {
     customerWantsCondiments(): boolean {
         appendLog('...Would you like milk and sugar with your coffee?');
 
-        const answer = !!Math.floor(Math.random() * 2);
+        const answer = !!getRandom(2);
         appendLog(`...${answer ? 'Yes, please!' : 'No, thank you!'}`);
 
         return answer;
