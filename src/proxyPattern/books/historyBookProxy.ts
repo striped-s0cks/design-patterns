@@ -41,7 +41,7 @@ export default class HistoryBookProxy implements Book {
         this.historyBook = book;
     }
 
-    async printBookInfo(): Promise<void> {
+    printBookInfo(): void {
         if (this.historyBook) {
             appendLog(`"${this.getTitle()}", by ${this.getAuthor()}, ${this.getPageCount()} pages`, this.dummyDivId);
         } else {
@@ -51,11 +51,11 @@ export default class HistoryBookProxy implements Book {
             if (!this.isLoading) {
                 this.isLoading = true;
 
-                // make it look like we are making a network call to get the object
-                return new Promise(() => setTimeout(() => {
+                // some expensive operation
+                setTimeout(() => {
                     this.setHistoryBook(new HistoryBook());
                     this.printBookInfo();
-                }, this.delayInMs));
+                }, this.delayInMs);
             }
         }
     }
