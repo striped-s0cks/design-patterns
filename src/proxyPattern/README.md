@@ -7,18 +7,21 @@ classDiagram
         getAuthor()
         getTitle()
         getPageCount()
+        printBookInfo()
     }
 
     class HistoryBookProxy {
         getAuthor()
         getTitle()
         getPageCount()
+        printBookInfo()
     }
 
     class HistoryBook {
         getAuthor()
         getTitle()
         getPageCount()
+        printBookInfo()
     }
 
     Book <|.. HistoryBookProxy
