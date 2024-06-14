@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: [
+    './src/compoundPatterns/index.ts',
     './src/proxyPattern/index.ts',
     './src/statePattern/index.ts',
     './src/compositePattern/index.ts',
