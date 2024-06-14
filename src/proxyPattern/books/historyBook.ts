@@ -1,3 +1,4 @@
+import { appendLog } from "../../utils";
 import Book from "./book";
 
 export default class HistoryBook implements Book {
@@ -21,5 +22,9 @@ export default class HistoryBook implements Book {
 
     getPageCount(): number {
         return this.pageCount;
+    }
+
+    printBookInfo(): void {
+        appendLog(`"${this.getTitle()}", by ${this.getAuthor()}, ${this.getPageCount()} pages`, 'historyBookDiv');
     }
 }

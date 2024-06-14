@@ -6,8 +6,6 @@ export default class HistoryBookProxy implements Book {
     private historyBook: Book;
     private isLoading = false;
     private delayInMs: number;
-    // without a dummy div, the print log will be added to the bottom of the page
-    private dummyDivId = 'historyBookDiv';
 
     constructor(delayInMs: number) {
         this.delayInMs = delayInMs;
@@ -43,10 +41,11 @@ export default class HistoryBookProxy implements Book {
 
     printBookInfo(): void {
         if (this.historyBook) {
-            appendLog(`"${this.getTitle()}", by ${this.getAuthor()}, ${this.getPageCount()} pages`, this.dummyDivId);
+            this.historyBook.printBookInfo();
         } else {
             appendLog('Loading the greatest history book, please wait....');
-            appendDiv(this.dummyDivId);
+            // without a dummy div, the print log will be added to the bottom of the page
+            appendDiv('historyBookDiv');
 
             if (!this.isLoading) {
                 this.isLoading = true;
