@@ -24,14 +24,20 @@ export function appendHeader(text: string, headerType: HeaderType): void {
 }
 
 /**
- * Adds a div with provided logs to the root element.
+ * Adds a `li` element with provided log to the root element.
+ * If `elementId` is provided, the log will be added to that element instead.
  */
-export function appendLog(log: string): void {
+export function appendLog(log: string, elementId?: string): void {
     const li = document.createElement('li');
     li.append(log);
-    getRoot().append(li);
+
+    const element = elementId ? document.getElementById(elementId) : getRoot();
+    element.append(li);
 }
 
+/**
+ * Adds a `br` element to the root element.
+ */
 export function appendBreak(): void {
     const br = document.createElement('br');
     getRoot().append(br);
@@ -49,4 +55,13 @@ export function roundToDecimal(num: number, decimal: number): number {
  */
 export function getRandom(limit: number): number {
     return Math.floor(Math.random() * limit);
+}
+
+/**
+ * Adds an empty div with provided id to the root element.
+ */
+export function appendDiv(id: string): void {
+    const div = document.createElement('div');
+    div.setAttribute('id', id);
+    getRoot().append(div);
 }
