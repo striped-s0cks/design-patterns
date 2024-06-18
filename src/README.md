@@ -1,3 +1,11 @@
+A *Pattern* is a solution to a problem in a context.
+* the *context* is the situation in which the pattern applies. This should be a recurring situation.
+* the *problem* refers to the goal you are trying to achieve in this context, but it also refers to any constrains that
+occur in the context.
+* the *solution* is what you are after: a general design that anyone can apply that resolves the goal and set of
+constraints.
+
+An *Anti-pattern* tells you how to go from a problem to a BAD solution.
 # Design Principles
 
 * Identify the aspects of your application that vary and separate them from what stays the same.
